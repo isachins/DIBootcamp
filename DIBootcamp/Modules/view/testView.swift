@@ -23,7 +23,12 @@ struct testView: View {
                 } else {
                     List {
                         ForEach(viewModel.items, id: \.self) { item in
-                            Text(item.title)
+                            VStack(alignment: .leading) {
+                                Text(item.title)
+                                    .font(.headline)
+                                Text(item.desc)
+                                    .font(.subheadline)
+                            }
                         }
                         .onDelete { indexSet in
                             Task {
