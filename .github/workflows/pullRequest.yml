@@ -39,7 +39,7 @@ jobs:
       - name: Run Tests
         run: bundle exec fastlane unit_test
         env:
-          SCAN_DEVICE: "iPhone 15 Pro"  # Use a supported device
+          SCAN_DEVICE: "platform=iOS Simulator,name=iPhone 15 Pro,OS=17.0"  # Use a supported device
 
       - name: Swift Packages Cache
         uses: actions/cache@v3

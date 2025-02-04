@@ -8,7 +8,7 @@ platform :ios do
       scan(
         clean: options[:clean],
         skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
-        device: "iPhone 15 Pro", # ✅ Use a valid simulator
+        device: "iPhone 15 Pro (17.0)", # ✅ Use a valid simulator
         fail_build: false # ✅ Prevent immediate failure
       )
     end
