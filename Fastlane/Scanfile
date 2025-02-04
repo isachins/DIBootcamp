@@ -4,7 +4,7 @@
 workspace "DIBootcamp.xcodeproj/project.xcworkspace"
 scheme "DIBootcamp"
 sdk "iphonesimulator"
-device "iPhone 16"
+device "iPhone 15 Pro"
 code_coverage true
 xcargs '-parallelizeTargets'
 prelaunch_simulator true

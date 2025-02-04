@@ -33,6 +33,14 @@ jobs:
       - name: Install gems
         run: bundle install
 
+      - name: List Available Simulators  # Debugging Step
+        run: xcrun simctl list devices
+
+      - name: Run Tests
+        run: bundle exec fastlane unit_test
+        env:
+          SCAN_DEVICE: "iPhone 15 Pro"  # Use a supported device
+
       - name: Swift Packages Cache
         uses: actions/cache@v3
         id: cache
